@@ -4,6 +4,14 @@ main() => runApp(PerguntaApp());
 
 
 class PerguntaApp extends StatelessWidget {
+
+  var perguntaSelecionada = 0;
+  void resposta(){
+    perguntaSelecionada++;
+    print('Respondida!');
+    print(perguntaSelecionada);
+  }
+
   @override
   Widget build(BuildContext context){
     final List<String> perguntas = [
@@ -17,10 +25,10 @@ class PerguntaApp extends StatelessWidget {
         ),
       body: Column(
         children: [
-          Text(perguntas[0]),
-            ElevatedButton(onPressed: null, child: Text('Resposta 01')),
-            ElevatedButton(onPressed: null, child: Text('Resposta 02')),
-            ElevatedButton(onPressed: null, child: Text('Resposta 03')),
+          Text(perguntas[perguntaSelecionada]),
+            ElevatedButton(onPressed: resposta, child: Text('Resposta 01')),
+            ElevatedButton(onPressed: resposta, child: Text('Resposta 02')),
+            ElevatedButton(onPressed: resposta, child: Text('Resposta 03')),
         ],
       ),
      ), 
