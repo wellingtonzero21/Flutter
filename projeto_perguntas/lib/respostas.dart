@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Resposta extends StatelessWidget {
   
@@ -19,7 +18,6 @@ class Resposta extends StatelessWidget {
               foregroundColor: Colors.white,
             ),
             onPressed: quandoSelecionado, child: Text(texto)
-        
           ),
         );
       }
