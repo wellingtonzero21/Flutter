@@ -30,12 +30,12 @@ class _PerguntaAppState extends State<PerguntaApp> {
 
     for(String textoResp in perguntas[_perguntaSelecionada].cast()['respostas']){
       respostas.add(Resposta(textoResp, _resposta));
-    };
+    }
 
     return MaterialApp(
      home: Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Perguntas')),
+        title: const Center(child: Text('Perguntas')),
         ),
       body: Column(
         children: [
@@ -48,6 +48,8 @@ class _PerguntaAppState extends State<PerguntaApp> {
     }
   }
 class PerguntaApp extends StatefulWidget {
+  const PerguntaApp({super.key});
+
 
   _PerguntaAppState createState(){
     return _PerguntaAppState();
