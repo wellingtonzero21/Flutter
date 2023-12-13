@@ -15,7 +15,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
 
   @override
   Widget build(BuildContext context){
-    final List<Map<String, Object>> perguntas = [
+    final List<Map<String, Object>> perguntas = 
       {
         'texto'  : 'Qual a sua cor favorita?',
         'respostas' : ['Preto','Vermelho','Verde','Branco'],
