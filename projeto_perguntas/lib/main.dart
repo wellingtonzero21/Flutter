@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projeto_perguntas/questionario.dart';
 import 'package:projeto_perguntas/resultado.dart';
 
-main() => runApp(PerguntaApp());
+main() => runApp(PerguntaApp())
 
 class _PerguntaAppState extends State<PerguntaApp> {
   final List<Map<String, Object>> _perguntas = const [
